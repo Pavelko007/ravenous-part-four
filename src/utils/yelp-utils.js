@@ -11,7 +11,9 @@ export async function retrieveBusinessListings(term, location, sortBy) {
             Authorization: `Bearer ${apiKey}`
         }
     };
-    const url = `${apiBaseUrl}${endpointUrl}?term=${term}&location=${location}&sort_by=${sortBy}`;
+    let url = `${apiBaseUrl}${endpointUrl}?term=${term}&location=${location}&sort_by=${sortBy}`;
+    //uncomment to overcome CORS issue
+    // url = "https://cors-anywhere.herokuapp.com/" + url; 
     try {
         const response = await fetch(url, options);
         const responseJson = await response.json();
