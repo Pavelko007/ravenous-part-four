@@ -15,7 +15,7 @@ const Business = ({ business }) => {
           <p>{`${business.state} ${business.zipCode}`}</p>
         </div>
         <div className={styles.BusinessReviews}>
-          <h3>{business.category.toUpperCase()}</h3>
+          {/* <h3>{business.category.toUpperCase()}</h3> */}
           <h3 className={styles.rating}>{`${business.rating} stars`}</h3>
           <p>{`${business.reviewCount} reviews`}</p>
         </div>
