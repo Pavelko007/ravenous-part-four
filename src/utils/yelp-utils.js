@@ -1,4 +1,4 @@
-const apiKey = "S1aS-cS0ZPK2pxKXP5Exr2rCq_oFkiPnBK7cjpBcnyyMQLPm36KeLikNFhQQgJJDCvjEuF5oMr2H0fj6nDDbpbMbJ8w9rKqNBKY9-xHcz8Bk4Aws0GOrskN4Sy9bZnYx";
+const apiKey = process.env.REACT_APP_YELP_API_KEY;
 
 const apiBaseUrl = "https://api.yelp.com/v3";
 
